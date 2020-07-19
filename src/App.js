@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage/LoginPage';
 // eslint-disable-next-line import/no-named-as-default
 import Feedback from './components/FeedbackPage/feedback';
@@ -12,7 +12,7 @@ import GameScreen from './components/GameScreen/GameScreen';
 export default function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact path="/game-screen" component={GameScreen} />
           <Route exact path="/feedback" component={Feedback} />
@@ -20,7 +20,7 @@ export default function App() {
           <Route exact path="/Settings" component={Settings} />
           <Route exact path="/Ranking" component={Ranking} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

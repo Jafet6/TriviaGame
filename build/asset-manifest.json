@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/TriviaGame/static/css/main.4c7a893e.chunk.css",
+    "main.js": "/TriviaGame/static/js/main.8f81bd6a.chunk.js",
+    "main.js.map": "/TriviaGame/static/js/main.8f81bd6a.chunk.js.map",
+    "runtime-main.js": "/TriviaGame/static/js/runtime-main.4c9a0e6c.js",
+    "runtime-main.js.map": "/TriviaGame/static/js/runtime-main.4c9a0e6c.js.map",
+    "static/js/2.a6cf7b29.chunk.js": "/TriviaGame/static/js/2.a6cf7b29.chunk.js",
+    "static/js/2.a6cf7b29.chunk.js.map": "/TriviaGame/static/js/2.a6cf7b29.chunk.js.map",
+    "index.html": "/TriviaGame/index.html",
+    "precache-manifest.6ad77ffd994246a4259256df8edb8ea5.js": "/TriviaGame/precache-manifest.6ad77ffd994246a4259256df8edb8ea5.js",
+    "service-worker.js": "/TriviaGame/service-worker.js",
+    "static/css/main.4c7a893e.chunk.css.map": "/TriviaGame/static/css/main.4c7a893e.chunk.css.map",
+    "static/js/2.a6cf7b29.chunk.js.LICENSE": "/TriviaGame/static/js/2.a6cf7b29.chunk.js.LICENSE",
+    "static/media/GameScreen.style.css": "/TriviaGame/static/media/backlights.0b8be41f.jpg",
+    "static/media/show-do-milhão.png": "/TriviaGame/static/media/show-do-milhão.0181037e.png",
+    "static/media/silvio.png": "/TriviaGame/static/media/silvio.58c42e68.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c9a0e6c.js",
+    "static/js/2.a6cf7b29.chunk.js",
+    "static/css/main.4c7a893e.chunk.css",
+    "static/js/main.8f81bd6a.chunk.js"
+  ]
+}
