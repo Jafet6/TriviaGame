@@ -1,0 +1,62 @@
+.settings-config {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  color: red;
+  background-color: rgb(255, 255, 0);
+  font-weight: 600;
+  margin-top: 2%;
+}
+
+.settings-choosed {
+  background: 'rgb(255,0,0)';
+  background: linear-gradient(
+    158deg,
+    rgba(126, 18, 18, 1) 15%,
+    rgba(205, 33, 33, 1) 35%,
+    rgba(134, 21, 21, 1) 50%,
+    rgba(205, 33, 33, 1) 65%,
+    rgba(126, 18, 18, 1) 85%
+  );
+  border-radius: 10px;
+  border: 2px solid white;
+  border: none;
+  color: gold;
+  font-weight: 900;
+  height: 50px;
+  padding-left: 10px;
+  width: 300px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.settings-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.settings-form label{
+  color: aliceblue;
+  font-weight: 700;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-right: 3px;
+  text-align: center;
+}
+
+.settings-container {
+  display: flex;
+  justify-content: center;
+}
+
+.setting-title {
+  color: aliceblue;
+  text-align: center;
+}

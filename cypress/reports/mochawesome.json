@@ -1,0 +1,1367 @@
+{
+  "stats": {
+    "suites": 18,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-06-15T20:33:31.136Z",
+    "end": "2020-06-15T20:33:44.651Z",
+    "duration": 13515,
+    "testsRegistered": 45,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 17,
+    "hasOther": true,
+    "skipped": 44,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "9bdae0a3-ede3-4bff-9023-cc8e66252948",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b10828a1-97fc-4289-b4c0-fdf33a043dcc",
+          "title": "O _header_ deve conter as informações da pessoa jogadora",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a imagem do Gravatar está presente no header",
+              "fullTitle": "O _header_ deve conter as informações da pessoa jogadora a imagem do Gravatar está presente no header",
+              "timedOut": null,
+              "duration": 841,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_IMAGE_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'O _header_ deve conter as i...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'O _header_ deve conter as i...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "8ec3be34-c443-485e-9b09-ea5e36f85ac0",
+              "parentUUID": "b10828a1-97fc-4289-b4c0-fdf33a043dcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "o nome da pessoa está presente no header",
+              "fullTitle": "O _header_ deve conter as informações da pessoa jogadora o nome da pessoa está presente no header",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_NAME_SELECTOR).contains(name);",
+              "err": {},
+              "uuid": "c2fc7e27-b9e9-41c0-b26a-63fd8a3209cd",
+              "parentUUID": "b10828a1-97fc-4289-b4c0-fdf33a043dcc",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "o placar zerado está presente no header",
+              "fullTitle": "O _header_ deve conter as informações da pessoa jogadora o placar zerado está presente no header",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_SCORE_SELECTOR).contains('0');",
+              "err": {},
+              "uuid": "3c0eda81-c957-40af-a232-9e6bcc0cc5c2",
+              "parentUUID": "b10828a1-97fc-4289-b4c0-fdf33a043dcc",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8ec3be34-c443-485e-9b09-ea5e36f85ac0"
+          ],
+          "pending": [],
+          "skipped": [
+            "c2fc7e27-b9e9-41c0-b26a-63fd8a3209cd",
+            "3c0eda81-c957-40af-a232-9e6bcc0cc5c2"
+          ],
+          "duration": 841,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4328a3fb-7c01-4a0c-897a-0be604248ad2",
+          "title": "A página deve conter as informações relacionadas à pergunta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a categoria da pergunta está presente",
+              "fullTitle": "A página deve conter as informações relacionadas à pergunta a categoria da pergunta está presente",
+              "timedOut": null,
+              "duration": 722,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(QUESTION_CATEGORY_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A página deve conter as inf...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A página deve conter as inf...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "17bef86f-a5f8-48f0-9dcc-143bd260e805",
+              "parentUUID": "4328a3fb-7c01-4a0c-897a-0be604248ad2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "o texto da pergunta está presente",
+              "fullTitle": "A página deve conter as informações relacionadas à pergunta o texto da pergunta está presente",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(QUESTION_TEXT_SELECTOR).should('exist');",
+              "err": {},
+              "uuid": "9633e0b6-f647-47ac-a9fc-df7fb57505c3",
+              "parentUUID": "4328a3fb-7c01-4a0c-897a-0be604248ad2",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "as alternativas devem estar presentes",
+              "fullTitle": "A página deve conter as informações relacionadas à pergunta as alternativas devem estar presentes",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).should('exist');\ncy.get(WRONG_ALTERNATIVES_SELECTOR).should('exist');",
+              "err": {},
+              "uuid": "0e94c447-9701-4e5b-9e6b-84e7da5ad9a7",
+              "parentUUID": "4328a3fb-7c01-4a0c-897a-0be604248ad2",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "17bef86f-a5f8-48f0-9dcc-143bd260e805"
+          ],
+          "pending": [],
+          "skipped": [
+            "9633e0b6-f647-47ac-a9fc-df7fb57505c3",
+            "0e94c447-9701-4e5b-9e6b-84e7da5ad9a7"
+          ],
+          "duration": 722,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1082c5a6-f6f3-4cab-b6cb-ea94ac37ef47",
+          "title": "Só deve ser possível escolher uma resposta correta por pergunta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a quantidade de respostas corretas deve ser 1",
+              "fullTitle": "Só deve ser possível escolher uma resposta correta por pergunta a quantidade de respostas corretas deve ser 1",
+              "timedOut": null,
+              "duration": 689,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).should('have.length', 1);",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Só deve ser possível escolh...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Só deve ser possível escolh...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "5bed3543-d471-4de2-831a-94714fe3bf41",
+              "parentUUID": "1082c5a6-f6f3-4cab-b6cb-ea94ac37ef47",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5bed3543-d471-4de2-831a-94714fe3bf41"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 689,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "817d6af7-58ee-4ae8-b80e-cce77b59766f",
+          "title": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifica cor da alternativa correta quando acerta a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica cor da alternativa correta quando acerta a questão",
+              "timedOut": null,
+              "duration": 716,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('have.css', 'border', '3px solid rgb(6, 240, 15)');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Ao clicar em uma resposta, ...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Ao clicar em uma resposta, ...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "fab8ae55-230d-45f2-a86a-7aac960d761e",
+              "parentUUID": "817d6af7-58ee-4ae8-b80e-cce77b59766f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica a cor das alternativas incorretas quando acerta a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica a cor das alternativas incorretas quando acerta a questão",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).should('have.css', 'border', '3px solid rgb(255, 0, 0)');",
+              "err": {},
+              "uuid": "96eec82d-ec8f-4e82-8b99-b95e182c61d7",
+              "parentUUID": "817d6af7-58ee-4ae8-b80e-cce77b59766f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "verifica cor da alternativa correta quando erra a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica cor da alternativa correta quando erra a questão",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('have.css', 'border', '3px solid rgb(6, 240, 15)');",
+              "err": {},
+              "uuid": "b7fef714-5ceb-4aef-b9a3-7e37ba552427",
+              "parentUUID": "817d6af7-58ee-4ae8-b80e-cce77b59766f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "verifica a cor das alternativas incorretas quando erra a questão",
+              "fullTitle": "Ao clicar em uma resposta, a resposta correta deve ficar verde e as incorretas, vermelhas verifica a cor das alternativas incorretas quando erra a questão",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).should('have.css', 'border', '3px solid rgb(255, 0, 0)');",
+              "err": {},
+              "uuid": "b68c681c-9cb9-4845-921e-9c7da99c195d",
+              "parentUUID": "817d6af7-58ee-4ae8-b80e-cce77b59766f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fab8ae55-230d-45f2-a86a-7aac960d761e"
+          ],
+          "pending": [],
+          "skipped": [
+            "96eec82d-ec8f-4e82-8b99-b95e182c61d7",
+            "b7fef714-5ceb-4aef-b9a3-7e37ba552427",
+            "b68c681c-9cb9-4845-921e-9c7da99c195d"
+          ],
+          "duration": 716,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "767f349b-f822-41c5-bf95-bab20ee10989",
+          "title": "A pessoa que joga tem 30 segundos para responder cada pergunta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "aguarda 5 segundos e responde a alternativa correta",
+              "fullTitle": "A pessoa que joga tem 30 segundos para responder cada pergunta aguarda 5 segundos e responde a alternativa correta",
+              "timedOut": null,
+              "duration": 734,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(5000);\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('not.be.disabled').click();",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga tem 30 se...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga tem 30 se...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "cd8d0a00-30db-48ae-a360-59c51c788249",
+              "parentUUID": "767f349b-f822-41c5-bf95-bab20ee10989",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "aguarda mais de 30 segundos para responder",
+              "fullTitle": "A pessoa que joga tem 30 segundos para responder cada pergunta aguarda mais de 30 segundos para responder",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(32000);\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).should('be.disabled');",
+              "err": {},
+              "uuid": "66210354-c30a-4db6-a017-c63c098a0fe7",
+              "parentUUID": "767f349b-f822-41c5-bf95-bab20ee10989",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cd8d0a00-30db-48ae-a360-59c51c788249"
+          ],
+          "pending": [],
+          "skipped": [
+            "66210354-c30a-4db6-a017-c63c098a0fe7"
+          ],
+          "duration": 734,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "aedc12c5-8a9d-4d32-b3e2-d46ba14a298b",
+          "title": "Ao clicar na resposta correta, pontos devem ser somados no placar da pessoa que está jogando",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "soma pontos ao acertar uma questão",
+              "fullTitle": "Ao clicar na resposta correta, pontos devem ser somados no placar da pessoa que está jogando soma pontos ao acertar uma questão",
+              "timedOut": null,
+              "duration": 721,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var then = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click().then(function () {\n  var now = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(then.player.score).to.be.lt(now.player.score);\n});",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Ao clicar na resposta corre...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Ao clicar na resposta corre...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "d047770f-2691-49f4-a433-b8793565a97c",
+              "parentUUID": "aedc12c5-8a9d-4d32-b3e2-d46ba14a298b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "não soma pontos ao errar uma questão",
+              "fullTitle": "Ao clicar na resposta correta, pontos devem ser somados no placar da pessoa que está jogando não soma pontos ao errar uma questão",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var then = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click().then(function () {\n  var now = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(then.player.score).to.be.eq(now.player.score);\n});",
+              "err": {},
+              "uuid": "6a0d39f6-1561-4d09-967c-59fd8223cb40",
+              "parentUUID": "aedc12c5-8a9d-4d32-b3e2-d46ba14a298b",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d047770f-2691-49f4-a433-b8793565a97c"
+          ],
+          "pending": [],
+          "skipped": [
+            "6a0d39f6-1561-4d09-967c-59fd8223cb40"
+          ],
+          "duration": 721,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ef88d38c-159e-4555-8d36-5d483e55c7c5",
+          "title": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "o botão de próxima pergunta não deve ser visível o início do jogo",
+              "fullTitle": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer o botão de próxima pergunta não deve ser visível o início do jogo",
+              "timedOut": null,
+              "duration": 698,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_NEXT_QUESTION_SELECTOR).should('not.be.visible');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Após a resposta ser dada, o...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Após a resposta ser dada, o...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "447df99e-b51f-457c-a7ee-ccbbaf329778",
+              "parentUUID": "ef88d38c-159e-4555-8d36-5d483e55c7c5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "botão de próxima pergunta é visível quando a pergunta é respondida corretamente",
+              "fullTitle": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer botão de próxima pergunta é visível quando a pergunta é respondida corretamente",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).should('be.visible');",
+              "err": {},
+              "uuid": "79ade933-faec-49e7-a0d1-e5bc4175e038",
+              "parentUUID": "ef88d38c-159e-4555-8d36-5d483e55c7c5",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "botão de próxima pergunta é visível quando a pergunta é respondida incorretamente",
+              "fullTitle": "Após a resposta ser dada, o botão \"Próxima\" deve aparecer botão de próxima pergunta é visível quando a pergunta é respondida incorretamente",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).should('be.visible');",
+              "err": {},
+              "uuid": "edd3e172-0edb-4000-bfd1-169f19b0f06b",
+              "parentUUID": "ef88d38c-159e-4555-8d36-5d483e55c7c5",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "447df99e-b51f-457c-a7ee-ccbbaf329778"
+          ],
+          "pending": [],
+          "skipped": [
+            "79ade933-faec-49e7-a0d1-e5bc4175e038",
+            "edd3e172-0edb-4000-bfd1-169f19b0f06b"
+          ],
+          "duration": 698,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bb00553e-e594-4cb7-a5c9-d14fecdacb6f",
+          "title": "A pessoa que joga deve responder 5 perguntas no total",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "acerta todas as perguntas",
+              "fullTitle": "A pessoa que joga deve responder 5 perguntas no total acerta todas as perguntas",
+              "timedOut": null,
+              "duration": 723,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var before = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click().then(function () {\n  var after = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(before.player.score).to.be.lt(after.player.score);\n});",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga deve resp...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga deve resp...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "8eebab8e-0ab8-45ec-91f4-58fd2f005fcb",
+              "parentUUID": "bb00553e-e594-4cb7-a5c9-d14fecdacb6f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "erra todas as perguntas",
+              "fullTitle": "A pessoa que joga deve responder 5 perguntas no total erra todas as perguntas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var before = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click().then(function () {\n  var after = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(before.player.score).to.be.eq(after.player.score);\n});",
+              "err": {},
+              "uuid": "3615704a-b936-4a39-85e9-766e99bfd28c",
+              "parentUUID": "bb00553e-e594-4cb7-a5c9-d14fecdacb6f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "redireciona para a tela de _feedback_ após a quinta pergunta",
+              "fullTitle": "A pessoa que joga deve responder 5 perguntas no total redireciona para a tela de _feedback_ após a quinta pergunta",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TEXT_SELECTOR).should('exist');",
+              "err": {},
+              "uuid": "554a5f47-281b-400a-8481-628d574c8862",
+              "parentUUID": "bb00553e-e594-4cb7-a5c9-d14fecdacb6f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8eebab8e-0ab8-45ec-91f4-58fd2f005fcb"
+          ],
+          "pending": [],
+          "skipped": [
+            "3615704a-b936-4a39-85e9-766e99bfd28c",
+            "554a5f47-281b-400a-8481-628d574c8862"
+          ],
+          "duration": 723,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "884f84fd-19a1-4945-974a-676d836e7976",
+          "title": "A pessoa que joga deve preencher as informações para iniciar um jogo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "escreve o nome da pessoa jogadora",
+              "fullTitle": "A pessoa que joga deve preencher as informações para iniciar um jogo escreve o nome da pessoa jogadora",
+              "timedOut": null,
+              "duration": 719,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type('Nome da pessoa');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga deve pree...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga deve pree...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "8bda33d4-9b30-4060-8bfb-6591e7ed6cb1",
+              "parentUUID": "884f84fd-19a1-4945-974a-676d836e7976",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "escreve o email da pessoa jogadora",
+              "fullTitle": "A pessoa que joga deve preencher as informações para iniciar um jogo escreve o email da pessoa jogadora",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_EMAIL_SELECTOR).type('email@pessoa.com');",
+              "err": {},
+              "uuid": "348c5088-711e-480a-9219-1aa4940f3c0a",
+              "parentUUID": "884f84fd-19a1-4945-974a-676d836e7976",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "botão Jogar desabilitado quando pessoa jogadora não preencher nenhum campo",
+              "fullTitle": "A pessoa que joga deve preencher as informações para iniciar um jogo botão Jogar desabilitado quando pessoa jogadora não preencher nenhum campo",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_PLAY_SELECTOR).should('be.disabled');",
+              "err": {},
+              "uuid": "8afba079-7bed-41c6-b224-0d715449e33c",
+              "parentUUID": "884f84fd-19a1-4945-974a-676d836e7976",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "botão Jogar desabilitado quando pessoa jogadora escrever apenas o nome",
+              "fullTitle": "A pessoa que joga deve preencher as informações para iniciar um jogo botão Jogar desabilitado quando pessoa jogadora escrever apenas o nome",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type('Nome da pessoa');\ncy.get(BUTTON_PLAY_SELECTOR).should('be.disabled');",
+              "err": {},
+              "uuid": "e5155a14-c11e-4ef9-be2d-fc57081eb254",
+              "parentUUID": "884f84fd-19a1-4945-974a-676d836e7976",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "botão Jogar desabilitado quando pessoa jogadora escrever apenas o email",
+              "fullTitle": "A pessoa que joga deve preencher as informações para iniciar um jogo botão Jogar desabilitado quando pessoa jogadora escrever apenas o email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_EMAIL_SELECTOR).type('email@pessoa.com');\ncy.get(BUTTON_PLAY_SELECTOR).should('be.disabled');",
+              "err": {},
+              "uuid": "75807daa-fee1-4772-9839-10c9a9746cc7",
+              "parentUUID": "884f84fd-19a1-4945-974a-676d836e7976",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "botão Jogar habilitado quando pessoa jogadora preencher os campos de nome e email",
+              "fullTitle": "A pessoa que joga deve preencher as informações para iniciar um jogo botão Jogar habilitado quando pessoa jogadora preencher os campos de nome e email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type('Nome da pessoa');\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type('email@pessoa.com');\ncy.get(BUTTON_PLAY_SELECTOR).should('not.be.disabled');",
+              "err": {},
+              "uuid": "56c25f74-0477-409d-9c55-f1c285aae0b3",
+              "parentUUID": "884f84fd-19a1-4945-974a-676d836e7976",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8bda33d4-9b30-4060-8bfb-6591e7ed6cb1"
+          ],
+          "pending": [],
+          "skipped": [
+            "348c5088-711e-480a-9219-1aa4940f3c0a",
+            "8afba079-7bed-41c6-b224-0d715449e33c",
+            "e5155a14-c11e-4ef9-be2d-fc57081eb254",
+            "75807daa-fee1-4772-9839-10c9a9746cc7",
+            "56c25f74-0477-409d-9c55-f1c285aae0b3"
+          ],
+          "duration": 719,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7374f9fe-aa04-4ab6-8dfc-7be6c27ea360",
+          "title": "A pessoa que joga deve ter acesso à tela de configurações através da tela inicial",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "o botão deve existir na página",
+              "fullTitle": "A pessoa que joga deve ter acesso à tela de configurações através da tela inicial o botão deve existir na página",
+              "timedOut": null,
+              "duration": 725,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_SETTINGS_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga deve ter ...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa que joga deve ter ...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "314ace71-7f77-4c82-9c95-f57eb0d8656c",
+              "parentUUID": "7374f9fe-aa04-4ab6-8dfc-7be6c27ea360",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "a tela de configurações deve possuir um título",
+              "fullTitle": "A pessoa que joga deve ter acesso à tela de configurações através da tela inicial a tela de configurações deve possuir um título",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_SETTINGS_SELECTOR).click();\ncy.get(SETTINGS_TITLE_SELECTOR).should('exist');",
+              "err": {},
+              "uuid": "fbc53939-8b11-4d05-854f-3be3706a75a4",
+              "parentUUID": "7374f9fe-aa04-4ab6-8dfc-7be6c27ea360",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "314ace71-7f77-4c82-9c95-f57eb0d8656c"
+          ],
+          "pending": [],
+          "skipped": [
+            "fbc53939-8b11-4d05-854f-3be3706a75a4"
+          ],
+          "duration": 725,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "00d2ac16-6b40-4531-8ed5-50229b9281c1",
+          "title": "A pessoa jogadora deve iniciar um jogo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "inicia jogo salvando um token de jogador",
+              "fullTitle": "A pessoa jogadora deve iniciar um jogo inicia jogo salvando um token de jogador",
+              "timedOut": null,
+              "duration": 752,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(INPUT_PLAYER_NAME_SELECTOR).type('Nome da pessoa');\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type('email@pessoa.com');\ncy.get(BUTTON_PLAY_SELECTOR).click().should(function () {\n  expect(localStorage.getItem(TOKEN_KEY)).not.to.be.null;\n});",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora deve inic...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora deve inic...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "205666b8-5758-4fe3-84ec-c8cbb67913dc",
+              "parentUUID": "00d2ac16-6b40-4531-8ed5-50229b9281c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "205666b8-5758-4fe3-84ec-c8cbb67913dc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 752,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2ab0ac20-d55c-4e02-8766-b47064193857",
+          "title": "Deve existir um botão para ir ao início",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "volta para a tela inicial",
+              "fullTitle": "Deve existir um botão para ir ao início volta para a tela inicial",
+              "timedOut": null,
+              "duration": 692,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\ncy.clearLocalStorage();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).type(name1);\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email1);\ncy.get(BUTTON_PLAY_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(BUTTON_RANKING_SELECTOR).click();\ncy.get(BUTTON_GO_HOME_SELECTOR).click();\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "5363cbff-be5f-4d4c-a1ca-7804cc8c4136",
+              "parentUUID": "2ab0ac20-d55c-4e02-8766-b47064193857",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5363cbff-be5f-4d4c-a1ca-7804cc8c4136"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 692,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3f7e9d90-4f89-4633-b30d-022bf5e910cb",
+          "title": "Apresentação do _ranking_",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve existir uma pessoa no _ranking_",
+              "fullTitle": "Apresentação do _ranking_ deve existir uma pessoa no _ranking_",
+              "timedOut": null,
+              "duration": 783,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(RANKING_PLAYERS_NAME_SELECTOR).should(function ($el) {\n  expect($el).to.have.lengthOf(1);\n});",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Apresentação do _ranking_'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Apresentação do _ranking_'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "7eab6bc7-8cc5-4c57-8e36-019c4021423f",
+              "parentUUID": "3f7e9d90-4f89-4633-b30d-022bf5e910cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "devem existir duas pessoas no _ranking",
+              "fullTitle": "Apresentação do _ranking_ devem existir duas pessoas no _ranking",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_GO_HOME_SELECTOR).click();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).clear();\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).clear();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).type(name2);\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email2);\ncy.get(BUTTON_PLAY_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(BUTTON_RANKING_SELECTOR).click();\ncy.get(RANKING_PLAYERS_NAME_SELECTOR).should(function ($el) {\n  expect($el).to.have.lengthOf(2);\n});",
+              "err": {},
+              "uuid": "4d2f02ea-8e5a-4aa0-95fd-222f3d39d9d7",
+              "parentUUID": "3f7e9d90-4f89-4633-b30d-022bf5e910cb",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "o _ranking_ deve ser ordenado pela pontuação",
+              "fullTitle": "Apresentação do _ranking_ o _ranking_ deve ser ordenado pela pontuação",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_GO_HOME_SELECTOR).click();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).clear();\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).clear();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).type(name2);\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email2);\ncy.get(BUTTON_PLAY_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(BUTTON_RANKING_SELECTOR).click();\ncy.get(BUTTON_GO_HOME_SELECTOR).click();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).clear();\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).clear();\ncy.get(INPUT_PLAYER_NAME_SELECTOR).type(name3);\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).type(email3);\ncy.get(BUTTON_PLAY_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(BUTTON_RANKING_SELECTOR).click();\nvar ranking = [name1, name3, name2];\ncy.get(RANKING_PLAYERS_NAME_SELECTOR).should(function ($el) {\n  expect($el).to.have.lengthOf(3);\n});\ncy.get(RANKING_PLAYERS_NAME_SELECTOR).each(function ($el, $index) {\n  expect($el.text()).to.be.eq(ranking[$index]);\n});",
+              "err": {},
+              "uuid": "422604e2-c3af-47fc-9f1d-96f4d5851fa7",
+              "parentUUID": "3f7e9d90-4f89-4633-b30d-022bf5e910cb",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7eab6bc7-8cc5-4c57-8e36-019c4021423f"
+          ],
+          "pending": [],
+          "skipped": [
+            "4d2f02ea-8e5a-4aa0-95fd-222f3d39d9d7",
+            "422604e2-c3af-47fc-9f1d-96f4d5851fa7"
+          ],
+          "duration": 783,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "eea4d298-375d-47f7-affb-a0411017a4dd",
+          "title": "O _header_ de _feedback_ deve conter as informações da pessoa jogadora",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a imagem do Gravatar está presente no header",
+              "fullTitle": "O _header_ de _feedback_ deve conter as informações da pessoa jogadora a imagem do Gravatar está presente no header",
+              "timedOut": null,
+              "duration": 742,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_IMAGE_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'O _header_ de _feedback_ de...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'O _header_ de _feedback_ de...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "fea3c283-9f9a-4c6e-8b14-6ded58d8058c",
+              "parentUUID": "eea4d298-375d-47f7-affb-a0411017a4dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "o nome da pessoa está presente no header",
+              "fullTitle": "O _header_ de _feedback_ deve conter as informações da pessoa jogadora o nome da pessoa está presente no header",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_NAME_SELECTOR).contains(name);",
+              "err": {},
+              "uuid": "470cc494-32aa-4459-ad35-749516daf847",
+              "parentUUID": "eea4d298-375d-47f7-affb-a0411017a4dd",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "o placar com o valor atual está presente no header",
+              "fullTitle": "O _header_ de _feedback_ deve conter as informações da pessoa jogadora o placar com o valor atual está presente no header",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(HEADER_SCORE_SELECTOR).should(function ($el) {\n  var state = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(parseInt($el.text())).to.be.eq(state.player.score);\n});",
+              "err": {},
+              "uuid": "3c630b2d-fe07-41b4-acf5-1f0b9fdb920d",
+              "parentUUID": "eea4d298-375d-47f7-affb-a0411017a4dd",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fea3c283-9f9a-4c6e-8b14-6ded58d8058c"
+          ],
+          "pending": [],
+          "skipped": [
+            "470cc494-32aa-4459-ad35-749516daf847",
+            "3c630b2d-fe07-41b4-acf5-1f0b9fdb920d"
+          ],
+          "duration": 742,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1a754988-45f4-4d0d-bf26-f52cb52a5534",
+          "title": "A pessoa deve ver a mensagem de _feedback_",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "acertou menos de 3 perguntas",
+              "fullTitle": "A pessoa deve ver a mensagem de _feedback_ acertou menos de 3 perguntas",
+              "timedOut": null,
+              "duration": 749,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TEXT_SELECTOR).contains('Podia ser melhor...');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa deve ver a mensage...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa deve ver a mensage...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "f68453c3-9b67-418e-a057-be145da5f4b6",
+              "parentUUID": "1a754988-45f4-4d0d-bf26-f52cb52a5534",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "acertou 3 perguntas",
+              "fullTitle": "A pessoa deve ver a mensagem de _feedback_ acertou 3 perguntas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TEXT_SELECTOR).contains('Mandou bem!');",
+              "err": {},
+              "uuid": "9c717cbf-e651-432d-9dbd-97ff4eca8799",
+              "parentUUID": "1a754988-45f4-4d0d-bf26-f52cb52a5534",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "acertou mais de 3 perguntas",
+              "fullTitle": "A pessoa deve ver a mensagem de _feedback_ acertou mais de 3 perguntas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TEXT_SELECTOR).contains('Mandou bem!');",
+              "err": {},
+              "uuid": "2eb39487-3805-4d4f-b679-1845977ee57a",
+              "parentUUID": "1a754988-45f4-4d0d-bf26-f52cb52a5534",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f68453c3-9b67-418e-a057-be145da5f4b6"
+          ],
+          "pending": [],
+          "skipped": [
+            "9c717cbf-e651-432d-9dbd-97ff4eca8799",
+            "2eb39487-3805-4d4f-b679-1845977ee57a"
+          ],
+          "duration": 749,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "84f07f95-76f6-427a-a909-043cd58e5fa7",
+          "title": "A pessoa jogadora deve ver as informações relacionadas aos resultados obtidos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "não acertou nenhuma pergunta",
+              "fullTitle": "A pessoa jogadora deve ver as informações relacionadas aos resultados obtidos não acertou nenhuma pergunta",
+              "timedOut": null,
+              "duration": 698,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TOTAL_SCORE_SELECTOR).should(function ($el) {\n  var state = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(parseInt($el.text())).to.be.eq(state.player.score);\n});\ncy.get(FEEDBACK_TOTAL_QUESTION_SELECTOR).should(function ($el) {\n  var state = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(parseInt($el.text())).to.be.eq(state.player.assertions);\n});",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora deve ver ...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora deve ver ...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "219ea24c-c335-4f6a-b268-b5df7da676b6",
+              "parentUUID": "84f07f95-76f6-427a-a909-043cd58e5fa7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "acertou 2 perguntas",
+              "fullTitle": "A pessoa jogadora deve ver as informações relacionadas aos resultados obtidos acertou 2 perguntas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TOTAL_SCORE_SELECTOR).should(function ($el) {\n  var state = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(parseInt($el.text())).to.be.eq(state.player.score);\n});\ncy.get(FEEDBACK_TOTAL_QUESTION_SELECTOR).should(function ($el) {\n  var state = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(parseInt($el.text())).to.be.eq(state.player.assertions);\n});",
+              "err": {},
+              "uuid": "9cac7679-f7ab-44b4-b232-bdbf907fab9c",
+              "parentUUID": "84f07f95-76f6-427a-a909-043cd58e5fa7",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "acertou 4 perguntas",
+              "fullTitle": "A pessoa jogadora deve ver as informações relacionadas aos resultados obtidos acertou 4 perguntas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(WRONG_ALTERNATIVES_SELECTOR).first().click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(CORRECT_ALTERNATIVE_SELECTOR).click();\ncy.get(BUTTON_NEXT_QUESTION_SELECTOR).click();\ncy.get(FEEDBACK_TOTAL_SCORE_SELECTOR).should(function ($el) {\n  var state = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(parseInt($el.text())).to.be.eq(state.player.score);\n});\ncy.get(FEEDBACK_TOTAL_QUESTION_SELECTOR).should(function ($el) {\n  var state = JSON.parse(localStorage.getItem(LOCAL_STORAGE_STATE_KEY));\n  expect(parseInt($el.text())).to.be.eq(state.player.assertions);\n});",
+              "err": {},
+              "uuid": "060791ac-1feb-437c-a8e8-7b59d0b2dcc9",
+              "parentUUID": "84f07f95-76f6-427a-a909-043cd58e5fa7",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "219ea24c-c335-4f6a-b268-b5df7da676b6"
+          ],
+          "pending": [],
+          "skipped": [
+            "9cac7679-f7ab-44b4-b232-bdbf907fab9c",
+            "060791ac-1feb-437c-a8e8-7b59d0b2dcc9"
+          ],
+          "duration": 698,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d70c2558-9653-43ea-94ec-f01f715a7eb5",
+          "title": "A pessoa jogadora tem a opção de jogar novamente",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a pessoa deve ser redirecionada para tela inicial",
+              "fullTitle": "A pessoa jogadora tem a opção de jogar novamente a pessoa deve ser redirecionada para tela inicial",
+              "timedOut": null,
+              "duration": 741,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_PLAY_AGAIN_SELECTOR).click();\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora tem a opç...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora tem a opç...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "5c5e1259-7ec1-400b-baff-9f1d07ea4dd9",
+              "parentUUID": "d70c2558-9653-43ea-94ec-f01f715a7eb5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5c5e1259-7ec1-400b-baff-9f1d07ea4dd9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 741,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0639734f-a192-4c25-95d2-7e6e93992d72",
+          "title": "A pessoa jogadora tem a opção de visualizar a tela de _ranking_",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "a pessoa deve ser redirecionada para tela inicial",
+              "fullTitle": "A pessoa jogadora tem a opção de visualizar a tela de _ranking_ a pessoa deve ser redirecionada para tela inicial",
+              "timedOut": null,
+              "duration": 732,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_RANKING_SELECTOR).click();\ncy.get(RANKING_TITLE_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora tem a opç...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)\n\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'A pessoa jogadora tem a opç...'\n    at Object.cypressErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:44633/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:44633/__cypress/runner/cypress_runner.js:86194:17)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71500:31\n    at visitFailedByErr (http://localhost:44633/__cypress/runner/cypress_runner.js:71006:12)\n    at http://localhost:44633/__cypress/runner/cypress_runner.js:71499:22\n    at tryCatcher (http://localhost:44633/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44633/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:44633/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:44633/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:44633/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:44633/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:44633/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "38f191c4-a46e-4ad8-83dc-817dcd2cada7",
+              "parentUUID": "0639734f-a192-4c25-95d2-7e6e93992d72",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "38f191c4-a46e-4ad8-83dc-817dcd2cada7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 732,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
